@@ -1,0 +1,906 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+
+        .main {
+            width: 100%;
+            height: 594px;
+            background-color: rgb(255, 255, 255);
+
+        }
+
+        .container {
+            width: 100%;
+            height: 600px;
+
+
+        }
+
+        .banner {
+            width: 100%;
+            height: 600px;
+            background-image: url(images/banner2.jpg);
+            background-size: cover;
+
+        }
+
+        .header {
+            width: 100%;
+            height: 100px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .title {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .title h1 {
+            color: aliceblue;
+            font-size: 40px;
+        }
+
+        .title span {
+            font-size: 30px;
+        }
+
+        .menu {
+            width: 60%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .menu span {
+            color: aliceblue;
+            font-size: 15px;
+        }
+
+        .menu a {
+            color: black;
+            margin: 20px;
+            font-size: 15px;
+        }
+
+        .menu img {
+            width: 20px;
+        }
+
+        .banner h2 {
+            font-size: 70px;
+            margin-top: 130px;
+            margin-left: 40px;
+            font-weight: 900;
+            color: rgb(58, 58, 58);
+        }
+
+        h2 span {
+            color: rgb(235, 15, 15);
+        }
+
+        .banner p {
+            margin-left: 40px;
+            color: aliceblue;
+            font-size: 18px;
+        }
+
+        .banner button {
+            width: 270px;
+            height: 70px;
+            border: none;
+            background-color: rgb(16, 16, 16);
+            color: aliceblue;
+            border-radius: 50px 50px 50px 50px;
+            margin-top: 30px;
+            margin-left: 40px;
+        }
+
+        .playbtn {
+            width: 100%;
+            height: 82px;
+            margin-top: 65px;
+            position: absolute;
+
+        }
+
+        .play {
+            position: relative;
+            left: 47%;
+
+        }
+
+        /* Our Plans */
+
+
+        .plans {
+            width: 90%;
+            height: 1000px;
+            background-image: url(images/plan_bg.png);
+            background-position: center;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            margin: auto;
+        }
+
+        .text {
+            width: 90%;
+            height: 10%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .text img {
+            width: 50px;
+            margin-top: 110px;
+        }
+
+        .text h1 {
+            font-size: 45px;
+            margin-top: 10px;
+        }
+
+        .text p {
+            font-weight: 100;
+            font-size: 20px;
+            color: gray;
+            margin-top: 15px;
+        }
+
+        .images {
+            width: 90%;
+            margin: auto;
+            height: 50%;
+        }
+
+        .tops {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: last baseline;
+        }
+
+        .pics {
+            width: 30%;
+            height: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            background-color: white;
+        }
+
+        .pics img {
+            width: 87%;
+            height: 85%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .bottoms {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .text2 {
+            width: 30%;
+            height: 100%;
+            background-color: antiquewhite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .text2:hover {
+            width: 30%;
+            height: 100%;
+            background-color: rgb(241, 194, 134);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            cursor: pointer;
+            position: relative;
+        }
+
+
+
+        .text2 h2 {
+            font-size: 19px;
+            margin-top: 50px;
+        }
+
+        .text2 p {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .text2 button {
+            width: 100px;
+            height: 40px;
+            background-color: rgb(245, 211, 165);
+            border: none;
+            cursor: pointer;
+            transition: 0.5s;
+            margin-top: 43px;
+            opacity: 0;
+            border-radius: 5px 5px 5px 5px;
+            position: absolute;
+            top: 185px;
+        }
+
+        .text2 button:hover {
+            opacity: 1;
+        }
+
+        .plans2 {
+            width: 90%;
+            height: 850px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .shuffle {
+            width: 100%;
+            height: 800px;
+            margin-top: 200px;
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .abhi {
+            width: 32%;
+            height: 550px;
+        }
+
+        .abhi2 {
+            width: 32%;
+            height: 550px;
+            display: flex;
+            align-items: end;
+        }
+
+        .browns h2 {
+            text-align: center;
+            font-weight: 200;
+        }
+
+        .browns2 h2 {
+            text-align: center;
+            font-weight: 200;
+        }
+
+        .trio {
+            width: 90%;
+            height: 100px;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .about {
+            width: 100%;
+            height: 800px;
+            background-image: url(images/about_bg.jpg);
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .left1 {
+            width: 40%;
+            height: 100%;
+
+        }
+
+        .left2 {
+            width: 50%;
+            height: 100%;
+
+        }
+
+        .left2 img {
+            margin-top: 100px;
+            width: 520px;
+            height: 500px;
+        }
+
+        .left1 img {
+            margin-top: 200px;
+
+        }
+
+        .left1 h2 {
+            font-size: 40px;
+        }
+
+        .left1 p {
+            margin-top: 40px;
+            font-weight: 100;
+            color: rgb(52, 51, 51);
+        }
+
+        .left1 button {
+            width: 150px;
+            height: 40px;
+            margin-top: 60px;
+            font-size: 15px;
+            background-color: black;
+            color: aliceblue;
+            border-radius: 5px 5px 5px 5px;
+            border: none;
+        }
+
+        .blog {
+            width: 90%;
+            height: 1400px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .text4 {
+            width: 100%;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text4 h1 {
+            font-size: 40px;
+        }
+
+        .like {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left4 {
+            width: 50%;
+            height: 100%;
+            background-color: brown;
+        }
+
+        .left4 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .feb {
+            width: 80px;
+            height: 80px;
+            background-color: rgb(238, 89, 89);
+            position: relative;
+            bottom: 300px;
+            left: 86%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: aliceblue;
+            font-size: 25px;
+        }
+
+        .right4 {
+            width: 50%;
+            height: 100%;
+            box-shadow: 5px 0px 30px -8px rgb(205, 204, 204);
+        }
+
+        .right4 h5 {
+            color: gray;
+            margin-top: 80px;
+            font-size: 17px;
+            margin-left: 30px;
+        }
+
+        .right4 h1 {
+            font-size: 25px;
+            font-weight: 800;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+        .right4 p {
+            margin-top: 20px;
+            margin-left: 30px;
+            font-size: 18px;
+            font-weight: 100;
+            color: gray;
+        }
+
+        .comment {
+            width: 35%;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+
+        .groom {
+            width: 90%;
+            height: 750px;
+            margin: auto;
+            margin-top: 20px;
+
+        }
+
+        .text5 {
+            width: 100%;
+            height: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .text5 h1 {
+            font-size: 45px;
+            font-weight: 600;
+        }
+
+        .img5 {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .name5 {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .name5 h2 {
+            font-size: 30px;
+            font-weight: 300;
+        }
+
+        .name5 p {
+            text-align: center;
+        }
+
+        .contacts {
+            width: 90%;
+            height: 150px;
+            background-color: antiquewhite;
+            margin: auto;
+            position: relative;
+            top: 70px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .contacts h1 {
+            font-size: 40px;
+        }
+
+        .contacts span {
+            font-size: 45px;
+        }
+
+        .location {
+            width: 28%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: salmon;
+
+        }
+
+        .call {
+            width: 20%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: salmon;
+
+        }
+
+        .mail {
+            width: 22%;
+            height: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: salmon;
+
+        }
+
+        .logo5 {
+            width: 50px;
+            height: 50px;
+            border: 1px solid salmon;
+            display: flex;
+            justify-content: center;
+            align-items: centers
+        }
+
+        .logo5 img {
+            width: 30px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 600px;
+            background-color: rgb(30, 19, 19);
+            display: flex;
+        }
+
+        .left6 {
+            width: 50%;
+            height: 80%;
+        }
+
+        .right6 {
+            width: 50%;
+            height: 80%;
+        }
+
+        .left6 h2 {
+            margin-top: 100px;
+            font-size: 40px;
+            color: aliceblue;
+            margin-left: 60px;
+            margin-bottom: 30px;
+        }
+
+        .left6 input {
+            border: none;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            background-color: rgb(30, 19, 19);
+            width: 570px;
+            height: 30px;
+            padding: 10px 10px 10px 10px;
+            margin-bottom: 10px;
+            color: gray;
+            font-size: 20px;
+            margin-left: 60px;
+        }
+
+        .left6 textarea {
+            border: none;
+            border-bottom: 1px solid rgb(255, 255, 255);
+            background-color: rgb(30, 19, 19);
+            width: 570px;
+            height: 30px;
+            margin-left: 60px;
+            padding: 10px 10px 10px 10px;
+            color: gray;
+            font-size: 20px;
+        }
+
+        .left6 button {
+            width: 170px;
+            height: 50px;
+            border: none;
+            border-radius: 20px 20px 20px 20px;
+            background-color: rgb(240, 34, 34);
+            color: aliceblue;
+            font-size: 15px;
+
+        }
+
+        .sends {
+            width: 93%;
+            height: 60px;
+            margin-left: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logos {
+            width: 35%;
+            height: 40px;
+            background-color: beige;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .logos img {
+            width: 20px;
+        }
+        .right6{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 70px;
+        }
+        .copyright{
+            width: 100%;
+            height: 100px;
+            background-color: rgb(30, 19, 19);
+            text-align: center;
+            font-size: 15px;
+            
+            color: aliceblue;
+            font-family: sans-serif;
+        }
+        .copyright h2{
+            font-weight: 100;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="banner">
+                <div class="header">
+                    <div class="title">
+                        <h1><span>2</span>Rings</h1>
+                    </div>
+                    <div class="menu">
+                        <a href="home.html"><span>Home</span></a>
+                        <a href="about.html">About</a>
+                        <a href="service.html">Service</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact Us</a>
+                        <img src="images/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg">
+                    </div>
+                </div>
+                <h2>Wedding <span>Couple</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero quae perferendis deleniti quo,<br>
+                    aliquid
+                    inventore, praesentium commodi in distinctio obcaecati, officia sequi at voluptatibus<br> delectus
+                    voluptate
+                    repellendus nisi aperiam exercitationem?
+                </p>
+                <button>Get A Quote</button>
+                <div class="playbtn">
+                    <img class="play" src="images/play.png">
+                </div>
+            </div>
+        </div>
+        <div class="plans">
+            <div class="text">
+                <img src="images/ring.png">
+                <h1>Our Plan</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nemo rem dicta at ipsum corrupti nulla
+                    quo
+                </p>
+            </div>
+            <div class="images">
+                <div class="tops">
+                    <div class="pics">
+                        <img src="images/plan_img.jpg">
+                    </div>
+                    <div class="pics">
+                        <img src="images/plan_img1.jpg">
+                    </div>
+                    <div class="pics">
+                        <img src="images/plan_img2.jpg">
+                    </div>
+                </div>
+                <div class="bottoms">
+                    <div class="text2">
+                        <h2>FLOWER DECCORATION</h2>
+                        <p>Lorem ipsum dolor sit<br> amet consectetur adipisicing<br> elit. Veniam expedita non
+                            nobis<br>kfnsd ksldfnsdk klsdnfdskl klsdn</p>
+                        <button>Read More</button>
+                    </div>
+                    <div class="text2">
+                        <h2>BEST DECORATION</h2>
+                        <p>Lorem ipsum dolor sit <br>amet consectetur adipisicing<br> elit. Veniam expedita non
+                            nobiss<br>kfnsd ksldfnsdk klsdnfdskl klsdn</p>
+                        <button>Read More</button>
+
+                    </div>
+                    <div class="text2">
+                        <h2>HONEYMOON</h2>
+                        <p>Lorem ipsum dolor sit<br> amet consectetur adipisicing <br>elit. Veniam expedita non
+                            nobiss<br>kfnsd ksldfnsdk klsdnfdskl klsdn</p>
+                        <button>Read More</button>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="plans2">
+            <div class="text">
+                <img src="images/ring.png">
+                <h1>Our Plan</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nemo rem dicta at ipsum corrupti nulla
+                    quo
+                </p>
+            </div>
+            <div class="shuffle">
+                <div class="abhi">
+                    <div class="browns"><img src="images/ber_img.jpg">
+                        <h2>Lavanya</h2>
+                    </div>
+                </div>
+                <div class="abhi2">
+                    <div class="browns2"><img src="images/ber_img1.jpg">
+                        <h2>sneha</h2>
+                    </div>
+                </div>
+                <div class="abhi">
+                    <div class="browns"><img src="images/ber_img2.jpg">
+                        <h2>sanjana</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="trio">
+            <img src="images/round.png">
+        </div>
+        <div class="about">
+            <div class="left1">
+                <img src="images/ring.png">
+                <h2>About Our Company</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br> Ex, quod, repellendus ut, ducimus nemo
+                    magnam <br>expedita aliquam dolor exercitationem cum eius doloribus<br> tempore quisquam at?
+                    Obcaecati
+                    blanditiis quos harum!</p>
+                <button>Read More</button>
+            </div>
+            <div class="left2">
+                <img src="images/about.png">
+            </div>
+        </div>
+        <div class="blog">
+            <div class="text4">
+                <img src="images/ring.png">
+                <h1>FROM THE BLOG</h1>
+            </div>
+            <div class="like">
+                <div class="left4">
+                    <img src="images/blog_img1.jpg">
+                    <div class="feb">
+                        06<br>Feb
+                    </div>
+
+                </div>
+                <div class="right4">
+                    <h5>Post by: 2Rings</h5>
+                    <h1>Make The Moments Delighted With Us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Dolor voluptatem ducimus atque
+                        labore
+                        perspiciatis <br>nemo quam ipsum excepturi, fuga, inventore eius <br>explicabo sapiente qui
+                        mollitia a
+                        as Lorem,<br> ipsum dolor sit amet consectetur adipisicing elit. <br>Voluptatem quod totam
+                        fugiat nemo ea<br> autem laboriosam odit fugit expedita d</p>
+                    <div class="comment">
+                        <h2>Like</h2>
+                        <h2>Comment</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="like">
+                <div class="left4">
+                    <img src="images/blog_img2.jpg">
+                    <div class="feb">
+                        06<br>Feb
+                    </div>
+                </div>
+                <div class="right4">
+                    <h5>Post by: 2Rings</h5>
+                    <h1>Make The Moments Delighted With Us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<br> Dolor voluptatem ducimus atque
+                        labore
+                        perspiciatis <br>nemo quam ipsum excepturi, fuga, inventore eius <br>explicabo sapiente qui
+                        mollitia a
+                        as Lorem,<br> ipsum dolor sit amet consectetur adipisicing elit. <br>Voluptatem quod totam
+                        fugiat nemo ea<br> autem laboriosam odit fugit expedita d</p>
+                    <div class="comment">
+                        <h2>Like</h2>
+                        <h2>Comment</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="groom">
+            <div class="text5">
+                <img src="images/ring.png">
+                <h1>What Our Grooms Says</h1>
+            </div>
+            <div class="img5">
+                <img src="images/saya.png">
+            </div>
+            <div class="name5">
+                <h2>Vishal Verma</h2>
+                <p>A atque maxime doloribus optio distinctio <br>enim eligendi, mollitia soluta sequi maiores <br></p>
+            </div>
+
+        </div>
+        <div class="contacts">
+            <h1>2<span>Rings</span></h1>
+            <div class="location">
+                <div class="logo5">
+                    <img src="images/location-dot-solid.svg">
+                </div>
+                Near Ganeshji Temple, SRDR
+            </div>
+            <div class="call">
+                <div class="logo5">
+                    <img src="images/phone-solid.svg">
+                </div>
+                +91-7849-959-782
+            </div>
+            <div class="mail">
+                <div class="logo5">
+                    <img src="images/envelope-solid.svg">
+                </div>
+                fitness44freak@gmail
+            </div>
+
+        </div>
+        <div class="footer">
+            <div class="left6">
+                <h2>Contact Us</h2>
+                <input type="text" name="Name" placeholder="Name"><br>
+                <input type="number" name="Phone Number" placeholder="Phone Number"><br>
+                <input type="email" name="Email" placeholder="Email"><br>
+                <textarea>Message</textarea>
+                <div class="sends">
+                    <button>Send</button>
+                    <div class="logos">
+                        <img src="images/facebook-f-brands-solid.svg">
+                        <img src="images/instagram-brands-solid.svg">
+                        <img src="images/x-twitter-brands-solid (1).svg">
+                        <img src="images/linkedin-in-brands-solid.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="right6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d10635.4903416709!2d74.48584951015053!3d28.43725719034218!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sHotels!5e0!3m2!1sen!2sin!4v1739535372765!5m2!1sen!2sin"
+                    width="550" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            
+        </div>
+        <div class="copyright">
+            <h4>&#169 2019 All Rights Reserved. Free HTML Templates</h4>
+        </div>
+
+
+
+    </div>
+
+</body>
+
+</html>
